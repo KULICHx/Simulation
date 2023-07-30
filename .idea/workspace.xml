@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911bc2cf-8023-4d63-af51-7b6e1d6dc5d1" name="Changes" comment="Added Unicode Sprites and fixed the map render">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/InitAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="911bc2cf-8023-4d63-af51-7b6e1d6dc5d1" name="Changes" comment="feat: add initAction class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Grass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Herbivore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Predator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Rock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Entitys/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/MapRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/MapRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/InitAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Actions/InitAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kulichx/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kulichx/Simulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +79,8 @@
       <updated>1690549635296</updated>
       <workItem from="1690549637375" duration="4546000" />
       <workItem from="1690572109263" duration="4860000" />
-      <workItem from="1690702213871" duration="5713000" />
+      <workItem from="1690702213871" duration="6278000" />
+      <workItem from="1690723214007" duration="5239000" />
     </task>
     <task id="LOCAL-00001" summary="Added Unicode Sprites and fixed the map render">
       <created>1690576454952</created>
@@ -97,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690576454952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add initAction class">
+      <created>1690709731349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690709731349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Unicode Sprites and fixed the map render" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Unicode Sprites and fixed the map render" />
+    <MESSAGE value="feat: add initAction class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add initAction class" />
   </component>
 </project>
