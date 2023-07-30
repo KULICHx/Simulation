@@ -5,13 +5,13 @@ import com.kulichx.Entitys.Entity;
 public class MapRenderer {
     public void render(Map map){
         System.out.print("   ");
-        for(int width = 0; width < map.width; width++){
+        for(int width = 0; width < map.getWidth(); width++){
             System.out.print(" Y" + width + " ");
         }
         System.out.println();
-        for (int x = 0; x < map.height; x++){
+        for (int x = 0; x < map.getHeight(); x++){
             System.out.print("X" + x);
-            for (int y = 0; y <= map.width; y++){
+            for (int y = 0; y <= map.getWidth(); y++){
                 Coordinates coordinates = new Coordinates(y, x);
                 if (map.isSquareEmpty(coordinates)){
                     System.out.print("|   ");
@@ -25,19 +25,19 @@ public class MapRenderer {
     private String selectUnicodeSpriteForEntity(Entity entity){
         switch (entity.getClass().getSimpleName()){
             case "Grass":
-                return "\uD83C\uDF3F";
+                return "Grs";
             case "Rock":
-                return "\uD83E\uDEA8";
+                return "Rok";
             case "Tree":
-                return "\uD83C\uDF33";
+                return "Tre";
             case "Herbivore":
-                return "\uD83D\uDC30";
+                return "Her";
             case "Predator":
-                return "\uD83E\uDD8A";
+                return "Pre";
         }
         return "";
     }
     public String getEntitySprite(Entity entity){
-        return " " + selectUnicodeSpriteForEntity(entity) + " ";
+        return "" + selectUnicodeSpriteForEntity(entity) + "";
     }
 }

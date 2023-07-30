@@ -1,9 +1,12 @@
 package com.kulichx;
 
 import com.kulichx.Entitys.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashMap;
 
+@Getter
 public class Map {
     final int width;
     final int height;

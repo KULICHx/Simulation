@@ -3,7 +3,7 @@ package com.kulichx.Entitys;
 import com.kulichx.Coordinates;
 
 public class Tree extends Entity{
-    public Tree(String sprite, Coordinates coordinates) {
+    public Tree(Coordinates coordinates) {
         super(coordinates);
     }
 }

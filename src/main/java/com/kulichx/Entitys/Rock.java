@@ -3,7 +3,7 @@ package com.kulichx.Entitys;
 import com.kulichx.Coordinates;
 
 public class Rock extends Entity{
-    public Rock(String sprite, Coordinates coordinates) {
+    public Rock(Coordinates coordinates) {
         super(coordinates);
     }
 }
