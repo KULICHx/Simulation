@@ -1,41 +1,37 @@
 package com.kulichx;
 
-import com.kulichx.Entitys.Entity;
+import com.kulichx.Entitys.statics.Coordinates;
+import com.kulichx.Entitys.statics.Entity;
 
 public class MapRenderer {
-    public void render(Map map){
+    public void render(MapEntity mapEntity){
         System.out.print("   ");
-        for(int width = 0; width < map.getWidth(); width++){
+        for(int width = 0; width < Simulation.width; width++){
             System.out.print(" Y" + width + " ");
         }
         System.out.println();
-        for (int x = 0; x < map.getHeight(); x++){
+        for (int x = 0; x < Simulation.height; x++){
             System.out.print("X" + x);
-            for (int y = 0; y <= map.getWidth(); y++){
-                Coordinates coordinates = new Coordinates(y, x);
-                if (map.isSquareEmpty(coordinates)){
+            for (int y = 0; y <= Simulation.width; y++){
+                Coordinates coordinates = new Coordinates(x, y);
+                if (mapEntity.isSquareEmpty(coordinates)){
                     System.out.print("|   ");
                 } else {
-                    System.out.print("|" + getEntitySprite(map.getEntity(coordinates)));
+                    System.out.print("|" + getEntitySprite(mapEntity.getEntity(coordinates)));
                 }
             }
             System.out.println();
         }
     }
     private String selectUnicodeSpriteForEntity(Entity entity){
-        switch (entity.getClass().getSimpleName()){
-            case "Grass":
-                return "Grs";
-            case "Rock":
-                return "Rok";
-            case "Tree":
-                return "Tre";
-            case "Herbivore":
-                return "Her";
-            case "Predator":
-                return "Pre";
-        }
-        return "";
+        return switch (entity.getClass().getSimpleName()) {
+            case "Grass" -> "Grs";
+            case "Rock" -> "Rok";
+            case "Tree" -> "Tre";
+            case "Herbivore" -> "Her";
+            case "Predator" -> "Pre";
+            default -> "";
+        };
     }
     public String getEntitySprite(Entity entity){
         return "" + selectUnicodeSpriteForEntity(entity) + "";
